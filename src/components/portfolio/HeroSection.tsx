@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import profileImg from "@/assets/Screenshot_20251017_213313.jpg";
+import profileImg from "@/assets/IMG_20251204_205256.jpg";
 
 const HeroSection = () => {
   return (
