@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 import { Brain, Cpu, Eye, Zap, Code, Database, Wrench, Terminal } from "lucide-react";
 
+const allSkills = [
+  "Python", "Java", "C", "OOP", "DSA", "Deep Learning", "LLMs",
+  "Multi-Agent Systems", "Computer Vision", "OpenCV", "MediaPipe",
+  "Object Detection", "Image Processing", "Git", "Unity", "Arduino",
+  "ESP8266", "Packet Tracer", "Linux", "Altium", "Proteus", "Circuit Design",
+  "PCB Layout", "Cloud-Native", "Workflow Automation", "DevOps", "CI/CD",
+  "API Integration", "Algorithm Design", "Problem Solving"
+];
+
 const skillCategories = [
   {
     icon: Code,
@@ -11,7 +20,7 @@ const skillCategories = [
   {
     icon: Database,
     label: "DSA",
-    skills: ["Arrays, Strings, Hashing", "Stacks, Queues, Linked Lists", "Recursion, Sorting, Searching", "Time & Space Complexity"],
+    skills: ["Arrays & Strings", "Stacks & Queues", "Linked Lists", "Recursion", "Sorting & Searching", "Hashing", "Time & Space Complexity"],
   },
   {
     icon: Brain,
@@ -21,12 +30,12 @@ const skillCategories = [
   {
     icon: Terminal,
     label: "Software Dev",
-    skills: ["OOP", "Problem Solving & Debugging", "API Integration", "Algorithm Design"],
+    skills: ["OOP", "Problem Solving", "Debugging", "API Integration", "Algorithm Design"],
   },
   {
     icon: Wrench,
     label: "Tools & Tech",
-    skills: ["OpenCV", "MediaPipe", "Git", "Unity", "Arduino", "ESP8266", "Packet Tracer"],
+    skills: ["OpenCV", "MediaPipe", "Git", "Unity", "Arduino", "ESP8266", "Packet Tracer", "Linux"],
   },
   {
     icon: Eye,
@@ -41,7 +50,7 @@ const skillCategories = [
   {
     icon: Zap,
     label: "Cloud & DevOps",
-    skills: ["Cloud-Native", "Workflow Automation", "DevOps", "CI/CD"],
+    skills: ["Cloud-Native", "Workflow Automation", "DevOps", "CI/CD", "Linux"],
   },
 ];
 
@@ -62,6 +71,31 @@ const AboutSection = () => (
         </p>
       </motion.div>
 
+      {/* All Skills - Tag Cloud */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="glass rounded-xl p-6"
+      >
+        <h3 className="text-sm font-bold text-foreground mb-4">All Skills</h3>
+        <div className="flex flex-wrap gap-2">
+          {allSkills.map((skill, i) => (
+            <motion.span
+              key={skill}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.02 }}
+              className="text-xs font-mono px-3 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-lg hover:bg-primary/20 hover:border-primary/40 transition-all cursor-default"
+            >
+              {skill}
+            </motion.span>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Categorized Skills */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {skillCategories.map((s, i) => (
           <motion.div
@@ -73,12 +107,13 @@ const AboutSection = () => (
             className="glass rounded-xl p-4 hover:glow-border transition-all group"
           >
             <s.icon size={18} className="text-primary mb-2 group-hover:text-accent transition-colors" />
-            <h3 className="text-xs font-bold text-foreground mb-2">{s.label}</h3>
-            <div className="flex flex-wrap gap-1">
+            <h3 className="text-xs font-bold text-foreground mb-3">{s.label}</h3>
+            <div className="space-y-1.5">
               {s.skills.map((skill) => (
-                <span key={skill} className="text-[9px] font-mono px-1.5 py-0.5 bg-primary/5 text-primary/80 rounded border border-primary/10">
-                  {skill}
-                </span>
+                <div key={skill} className="flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-primary/60" />
+                  <span className="text-[10px] font-mono text-secondary-foreground">{skill}</span>
+                </div>
               ))}
             </div>
           </motion.div>
