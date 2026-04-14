@@ -24,7 +24,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="font-mono text-sm font-bold tracking-wider text-gradient">
-          &lt;PORTFOLIO /&gt;
+          RUBIKA.N
         </a>
 
         {/* Desktop */}

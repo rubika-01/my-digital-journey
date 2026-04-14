@@ -1,50 +1,69 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
-import { Bot, Cloud, Heart, Eye, Hand, Brain, ArrowUpRight } from "lucide-react";
+import { Bot, Cloud, Heart, Eye, Hand, Brain, ArrowUpRight, CheckCircle } from "lucide-react";
 
 const projects = [
+  {
+    icon: Heart,
+    name: "TheraFun",
+    desc: "Gamification kit for autism therapy — real-world implementation. Improved therapy engagement by ~99% through gamified feedback and adaptive logic.",
+    tags: ["Unity", "Healthcare", "Gamification"],
+    completed: true,
+  },
   {
     icon: Bot,
     name: "AttendAI+",
     desc: "AI-powered intelligent attendance tracking and behavioral analytics using computer vision and AI-based pattern analysis.",
     tags: ["Computer Vision", "AI", "Analytics"],
+    completed: true,
+  },
+  {
+    icon: Eye,
+    name: "Drowsy Sentry System",
+    desc: "Real-time monitoring system using OpenCV and algorithmic state detection to identify fatigue patterns. Improved detection reliability by ~25%.",
+    tags: ["OpenCV", "Safety", "Real-time"],
+    completed: true,
+  },
+  {
+    icon: Hand,
+    name: "Green Grid – E-Waste Recycling",
+    desc: "Software-driven system to calculate recycling credits and securely track e-waste deposits. Improved transaction accuracy by ~30%.",
+    tags: ["E-Waste", "Backend", "Auth"],
+    completed: true,
   },
   {
     icon: Cloud,
     name: "Cloud-Native AI Workflow System",
     desc: "Multi-agent AI automation platform that decomposes complex tasks using LLM-based reasoning and execution pipelines.",
     tags: ["LLM", "Multi-Agent", "Cloud-Native"],
+    completed: true,
   },
   {
     icon: Brain,
     name: "LifeOS",
     desc: "Personal AI assistant for productivity, task management, and decision support with AI-driven contextual recommendations.",
     tags: ["AI Assistant", "Productivity", "NLP"],
-  },
-  {
-    icon: Heart,
-    name: "TheraFun",
-    desc: "Mental wellness and autism-assistive support system focused on structured interaction and emotional support.",
-    tags: ["Healthcare", "Accessibility", "AI"],
+    completed: true,
   },
   {
     icon: Eye,
     name: "Eye Blink & MediaPipe Assistive System",
     desc: "Computer vision accessibility system using MediaPipe and eye blink detection for hands-free interaction.",
     tags: ["MediaPipe", "OpenCV", "Accessibility"],
+    completed: true,
   },
   {
     icon: Hand,
     name: "Gesture-Based Hospital Management",
     desc: "OpenCV-based gesture recognition system for hospital management, enabling touchless interaction.",
     tags: ["OpenCV", "Gesture", "Healthcare"],
+    completed: true,
   },
 ];
 
 const moreProjects = [
   "InMoov Open-Source Humanoid PCB Design",
-  "GreenGrid Locator – E-Waste Management",
-  "Drowsy Detection System",
+  "More projects to be added with details...",
 ];
 
 const ProjectsSection = () => (
@@ -63,7 +82,14 @@ const ProjectsSection = () => (
             <div className="p-2 bg-primary/10 rounded-lg">
               <p.icon size={18} className="text-primary" />
             </div>
-            <ArrowUpRight size={14} className="text-muted-foreground group-hover:text-primary transition-colors" />
+            <div className="flex items-center gap-1.5">
+              {p.completed && (
+                <span className="flex items-center gap-1 text-[9px] font-mono text-green-400">
+                  <CheckCircle size={10} /> Done
+                </span>
+              )}
+              <ArrowUpRight size={14} className="text-muted-foreground group-hover:text-primary transition-colors" />
+            </div>
           </div>
           <h3 className="text-sm font-bold text-foreground mb-2">{p.name}</h3>
           <p className="text-xs text-muted-foreground leading-relaxed mb-3">{p.desc}</p>
@@ -85,7 +111,7 @@ const ProjectsSection = () => (
       viewport={{ once: true }}
       className="mt-6 glass rounded-xl p-5"
     >
-      <h4 className="text-xs font-mono text-primary mb-3 uppercase tracking-wider">More Projects (Coming Soon)</h4>
+      <h4 className="text-xs font-mono text-primary mb-3 uppercase tracking-wider">Coming Soon — More Details Later</h4>
       <div className="flex flex-wrap gap-2">
         {moreProjects.map((p) => (
           <span key={p} className="text-xs px-3 py-1.5 bg-secondary rounded-lg text-secondary-foreground">

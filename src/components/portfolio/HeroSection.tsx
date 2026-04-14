@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import profileImg from "@/assets/IMG_20251204_205256.jpg";
+import profileImg from "@/assets/profile-new.png";
 
 const HeroSection = () => {
   return (
@@ -28,7 +28,7 @@ const HeroSection = () => {
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden glow-border animate-pulse-glow">
             <img
               src={profileImg}
-              alt="Profile"
+              alt="Rubika N"
               className="w-full h-full object-cover object-top"
             />
           </div>
@@ -52,15 +52,16 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4">
-            <span className="text-gradient">AI / ML</span>
-            <br />
-            <span className="text-foreground">Engineer</span>
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-2">
+            <span className="text-foreground">RUBIKA.N</span>
           </h1>
+          <h2 className="text-xl md:text-2xl font-bold mb-4">
+            <span className="text-gradient">AI / ML Engineer</span>
+          </h2>
 
           <p className="text-muted-foreground text-sm md:text-base max-w-lg leading-relaxed mb-8">
-            Exploring the frontiers of Artificial Intelligence, Computer Vision, and Cloud-Native systems. 
-            Building intelligent solutions that make a difference.
+            Software Engineering candidate with strong fundamentals in DSA, OOP, and AI/ML. 
+            Proficient in Python, Java, and C. Building intelligent solutions that make a difference.
           </p>
 
           <div className="flex items-center gap-4 justify-center md:justify-start">
