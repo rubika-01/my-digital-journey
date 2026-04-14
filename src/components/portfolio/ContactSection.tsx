@@ -43,7 +43,13 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="glass rounded-xl p-6 space-y-4"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) => {
+            e.preventDefault();
+            const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
+            const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+            window.open(`mailto:rubikaofficial95@gmail.com?subject=${subject}&body=${body}`, '_blank');
+            setForm({ name: "", email: "", message: "" });
+          }}
         >
           <input
             type="text"
