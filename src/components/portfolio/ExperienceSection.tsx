@@ -6,7 +6,7 @@ const experiences = [
   {
     role: "Student Developer & PCB Designer",
     company: "ARC Club, KPRIET",
-    period: "Jan 2025 – Present",
+    period: "Jan 2025 – Dec 2025",
     points: [
       "Designed custom PCBs for InMoov humanoid robot using Altium, improving circuit efficiency by 95%",
       "Built and simulated a Line Follower Robot using Design Thinking in Proteus",
@@ -16,7 +16,7 @@ const experiences = [
   {
     role: "DevOps & Cloud Automation Intern",
     company: "RISE 4.0 by TamizhAnSkills",
-    period: "2024 – 2025",
+    period: "Mar 2026 – Present",
     points: [
       "Gained hands-on experience in DevOps practices and cloud automation",
       "Worked with CI/CD pipelines and infrastructure automation tools",

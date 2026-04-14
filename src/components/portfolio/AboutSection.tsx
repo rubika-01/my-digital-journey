@@ -1,56 +1,38 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
-import { Brain, Cpu, Eye, Zap, Code, Database, Wrench, Terminal } from "lucide-react";
 
-const allSkills = [
-  "Python", "Java", "C", "OOP", "DSA", "Deep Learning", "LLMs",
-  "Multi-Agent Systems", "Computer Vision", "OpenCV", "MediaPipe",
-  "Object Detection", "Image Processing", "Git", "Unity", "Arduino",
-  "ESP8266", "Packet Tracer", "Linux", "Altium", "Proteus", "Circuit Design",
-  "PCB Layout", "Cloud-Native", "Workflow Automation", "DevOps", "CI/CD",
-  "API Integration", "Algorithm Design", "Problem Solving"
-];
-
-const skillCategories = [
+const skillSections = [
   {
-    icon: Code,
-    label: "Programming",
-    skills: ["Python", "Java", "C"],
+    title: "Programming",
+    items: ["Python", "Java", "C"],
   },
   {
-    icon: Database,
-    label: "DSA",
-    skills: ["Arrays & Strings", "Stacks & Queues", "Linked Lists", "Recursion", "Sorting & Searching", "Hashing", "Time & Space Complexity"],
+    title: "DSA",
+    items: ["Arrays", "Strings", "Stacks", "Queues", "Linked Lists", "Trees", "Graphs", "Recursion", "Sorting", "Searching", "Hashing", "Dynamic Programming"],
   },
   {
-    icon: Brain,
-    label: "AI / ML",
-    skills: ["Deep Learning", "LLMs", "Multi-Agent Systems", "Computer Vision"],
+    title: "OOP",
+    items: ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction", "Design Patterns"],
   },
   {
-    icon: Terminal,
-    label: "Software Dev",
-    skills: ["OOP", "Problem Solving", "Debugging", "API Integration", "Algorithm Design"],
+    title: "AI / ML",
+    items: ["Deep Learning", "LLMs", "Multi-Agent Systems", "Computer Vision", "NLP", "Model Training"],
   },
   {
-    icon: Wrench,
-    label: "Tools & Tech",
-    skills: ["OpenCV", "MediaPipe", "Git", "Unity", "Arduino", "ESP8266", "Packet Tracer", "Linux"],
+    title: "Cloud & DevOps",
+    items: ["Cloud-Native", "CI/CD", "Docker", "Workflow Automation", "Linux", "DevOps"],
   },
   {
-    icon: Eye,
-    label: "Computer Vision",
-    skills: ["OpenCV", "MediaPipe", "Object Detection", "Image Processing"],
+    title: "Computer Vision",
+    items: ["OpenCV", "MediaPipe", "Object Detection", "Image Processing", "Eye Tracking"],
   },
   {
-    icon: Cpu,
-    label: "Hardware & PCB",
-    skills: ["Altium", "Proteus", "Circuit Design", "PCB Layout"],
+    title: "Tools & Tech",
+    items: ["Git", "Unity", "Arduino", "ESP8266", "Packet Tracer", "Linux", "VS Code"],
   },
   {
-    icon: Zap,
-    label: "Cloud & DevOps",
-    skills: ["Cloud-Native", "Workflow Automation", "DevOps", "CI/CD", "Linux"],
+    title: "Hardware & PCB",
+    items: ["Altium", "Proteus", "Circuit Design", "PCB Layout", "Soldering"],
   },
 ];
 
@@ -64,56 +46,34 @@ const AboutSection = () => (
         className="glass rounded-xl p-6"
       >
         <p className="text-sm text-secondary-foreground leading-relaxed">
-          I am a highly motivated and fast-learning individual with strong adaptability and a continuous learning mindset. 
-          I am quick to grasp new technologies and always ready to take on challenges with a problem-solving approach. 
+          I am a highly motivated and fast-learning individual with strong adaptability and a continuous learning mindset.
+          I have <span className="text-primary font-semibold">strong fundamentals in DSA, OOP, Cloud, and AI/ML</span>.
+          I am quick to grasp new technologies and always ready to take on challenges with a problem-solving approach.
           Proficient in Python, Java, and C, with experience building real-world, algorithm-driven applications.
           I am committed, responsible, and focused on delivering quality work while continuously improving my technical and professional skills.
         </p>
       </motion.div>
 
-      {/* All Skills - Tag Cloud */}
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="glass rounded-xl p-6"
-      >
-        <h3 className="text-sm font-bold text-foreground mb-4">All Skills</h3>
-        <div className="flex flex-wrap gap-2">
-          {allSkills.map((skill, i) => (
-            <motion.span
-              key={skill}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.02 }}
-              className="text-xs font-mono px-3 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-lg hover:bg-primary/20 hover:border-primary/40 transition-all cursor-default"
-            >
-              {skill}
-            </motion.span>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Categorized Skills */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {skillCategories.map((s, i) => (
+      {/* Skills Grid - each section with individual skill chips */}
+      <div className="space-y-4">
+        {skillSections.map((section, i) => (
           <motion.div
-            key={s.label}
-            initial={{ opacity: 0, y: 15 }}
+            key={section.title}
+            initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.06 }}
-            className="glass rounded-xl p-4 hover:glow-border transition-all group"
+            transition={{ delay: i * 0.05 }}
+            className="glass rounded-xl p-5 hover:glow-border transition-all"
           >
-            <s.icon size={18} className="text-primary mb-2 group-hover:text-accent transition-colors" />
-            <h3 className="text-xs font-bold text-foreground mb-3">{s.label}</h3>
-            <div className="space-y-1.5">
-              {s.skills.map((skill) => (
-                <div key={skill} className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-primary/60" />
-                  <span className="text-[10px] font-mono text-secondary-foreground">{skill}</span>
-                </div>
+            <h3 className="text-xs font-bold text-accent uppercase tracking-wider mb-3">{section.title}</h3>
+            <div className="flex flex-wrap gap-2">
+              {section.items.map((skill) => (
+                <span
+                  key={skill}
+                  className="text-[11px] font-mono px-3 py-1.5 bg-primary/8 text-foreground border border-primary/15 rounded-md hover:bg-primary/15 hover:border-primary/30 transition-all"
+                >
+                  {skill}
+                </span>
               ))}
             </div>
           </motion.div>
