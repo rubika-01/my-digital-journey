@@ -14,6 +14,15 @@ const experiences = [
     ],
   },
   {
+    role: "DevOps & Cloud Automation Intern",
+    company: "RISE 4.0 by TamizhAnSkills",
+    period: "2024 – 2025",
+    points: [
+      "Gained hands-on experience in DevOps practices and cloud automation",
+      "Worked with CI/CD pipelines and infrastructure automation tools",
+    ],
+  },
+  {
     role: "Manufacturing Intern",
     company: "Lumens System",
     period: "Aug 2024 (12–17)",
@@ -29,12 +38,12 @@ const experiences = [
     ],
   },
   {
-    role: "Virtual Internship",
+    role: "Virtual Internship – Network Engineer",
     company: "Cisco-AICTE",
     period: "May 2024 – Jul 2024",
     points: [
       "Developed foundational skills in networking and cyber-security",
-      "Completed Packet Tracer labs, simulated router-split networks",
+      "Completed Packet Tracer labs, simulated router-split networks, and resolved routing protocol conflicts",
     ],
   },
 ];

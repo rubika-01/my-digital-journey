@@ -22,17 +22,17 @@ const ContactSection = () => {
           </p>
 
           <div className="space-y-3">
-            <a href="mailto:rubikaofficial95@gmail" className="flex items-center gap-3 glass rounded-xl p-4 hover:glow-border transition-all group">
+            <a href="mailto:rubikaofficial95@gmail.com" className="flex items-center gap-3 glass rounded-xl p-4 hover:glow-border transition-all group">
               <Mail size={18} className="text-primary group-hover:text-accent transition-colors" />
               <span className="text-xs text-foreground">rubikaofficial95@gmail.com</span>
             </a>
-            <a href="#" className="flex items-center gap-3 glass rounded-xl p-4 hover:glow-border transition-all group">
+            <a href="https://www.linkedin.com/in/rubika-nataraj-864990293" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 glass rounded-xl p-4 hover:glow-border transition-all group">
               <Linkedin size={18} className="text-primary group-hover:text-accent transition-colors" />
-              <span className="text-xs text-foreground">www.linkedin.com/in/rubika-nataraj-864990293</span>
+              <span className="text-xs text-foreground">linkedin.com/in/rubika-nataraj-864990293</span>
             </a>
-            <a href="#" className="flex items-center gap-3 glass rounded-xl p-4 hover:glow-border transition-all group">
+            <a href="https://github.com/1Rubika" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 glass rounded-xl p-4 hover:glow-border transition-all group">
               <Github size={18} className="text-primary group-hover:text-accent transition-colors" />
-              <span className="text-xs text-foreground">https://github.com/1Rubika</span>
+              <span className="text-xs text-foreground">github.com/1Rubika</span>
             </a>
           </div>
         </motion.div>
