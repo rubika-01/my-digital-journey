@@ -3,18 +3,22 @@ import SectionWrapper from "./SectionWrapper";
 import { Trophy, Medal, Star, Award, Code, Flame } from "lucide-react";
 
 const achievements = [
-  { icon: Code, title: "500+ Problems Solved", detail: "LeetCode & HackerRank combined", color: "text-green-400" },
+  { icon: Code, title: "600+ Problems Solved", detail: "Across LeetCode & HackerRank — 5★ Problem Solving, 3★ Java & Python", color: "text-green-400" },
   { icon: Trophy, title: "Top 12 Finalist at IIT Madras", detail: "National-level competition", color: "text-yellow-400" },
+  { icon: Trophy, title: "10+ Technical Paper & Project Wins", detail: "IIT Madras, Anna University CEG, PSG Tech, CIT, Kongu & more", color: "text-yellow-400" },
   { icon: Flame, title: "6x Hackathon Winner", detail: "Multiple national & international hackathons", color: "text-orange-400" },
   { icon: Star, title: "Winner at 20+ College Events", detail: "Technical & non-technical competitions", color: "text-accent" },
   { icon: Trophy, title: "Samsung Solve for Tomorrow", detail: "Good Will Award – Winner 2025", color: "text-yellow-400" },
   { icon: Medal, title: "Top 0.4–5.8% – METI Japan 2025", detail: "Among 5000+ participants in Coding Contest", color: "text-primary" },
   { icon: Star, title: "IEEE YESIST12 – Malaysia", detail: "Finalist – International", color: "text-accent" },
   { icon: Medal, title: "Indo-Malaysian Hackathon", detail: "Dekathlon 3.0 – Winner", color: "text-primary" },
-  { icon: Award, title: "Best Student Award", detail: "Co-Curricular & Extra-Curricular Activities", color: "text-green-400" },
+  { icon: Award, title: "Academic Topper – Semester 4", detail: "Family Footprints Recognition Ceremony", color: "text-yellow-400" },
+  { icon: Medal, title: "50+ Microsoft Azure Skill Badges", detail: "Cloud fundamentals & infrastructure", color: "text-primary" },
+  { icon: Award, title: "Best Student Award (4x)", detail: "Co-Curricular & Extra-Curricular Activities", color: "text-green-400" },
   { icon: Medal, title: "Best Student in Department", detail: "ECE Department Recognition", color: "text-primary" },
   { icon: Award, title: "Best Social Innovation Award", detail: "Recognized for impactful social projects", color: "text-green-400" },
   { icon: Star, title: "Best First-Year Student Award", detail: "Academic & overall performance", color: "text-accent" },
+  { icon: Trophy, title: "2X Group World Record", detail: "MHHC, KPRIET — large-scale collaborative initiatives", color: "text-yellow-400" },
 ];
 
 const AchievementsSection = () => (
