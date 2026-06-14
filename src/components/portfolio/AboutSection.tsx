@@ -27,6 +27,10 @@ const skillSections = [
     items: ["OpenCV", "MediaPipe", "Object Detection", "Image Processing", "Eye Tracking"],
   },
   {
+    title: "Networking",
+    items: ["TCP/IP", "OSI Model", "IPv4 Addressing", "Subnetting", "Routing & Switching", "VLANs", "Cisco Packet Tracer", "Network Troubleshooting", "Network Security Fundamentals"],
+  },
+  {
     title: "Tools & Tech",
     items: ["Git", "Unity", "Arduino", "ESP8266", "Packet Tracer", "Linux", "VS Code"],
   },
@@ -46,11 +50,10 @@ const AboutSection = () => (
         className="glass rounded-xl p-6"
       >
         <p className="text-sm text-secondary-foreground leading-relaxed">
-          I am a highly motivated and fast-learning individual with strong adaptability and a continuous learning mindset.
-          I have <span className="text-primary font-semibold">strong fundamentals in DSA, OOP, Cloud, and AI/ML</span>.
-          I am quick to grasp new technologies and always ready to take on challenges with a problem-solving approach.
-          Proficient in Python, Java, and C, with experience building real-world, algorithm-driven applications.
-          I am committed, responsible, and focused on delivering quality work while continuously improving my technical and professional skills.
+          I enjoy turning ideas into real, production-ready solutions using <span className="text-primary font-semibold">software engineering, cloud technologies, and intelligent automation</span> to solve meaningful problems.
+          I focus on building systems that are <span className="text-accent font-semibold">reliable, scalable, accessible</span>, and designed to make a lasting impact.
+          I enjoy learning new technologies, solving complex challenges, and continuously improving my skills.
+          Whether working with a team or independently, I bring curiosity, initiative, and a strong commitment to delivering high-quality solutions that create real value.
         </p>
       </motion.div>
 

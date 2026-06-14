@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Student Developer & PCB Designer",
+    role: "Student Developer",
     company: "ARC Club, KPRIET",
     period: "Jan 2025 – Dec 2025",
     points: [
@@ -29,12 +29,14 @@ const experiences = [
     points: ["Assembled over 50+ printed circuit boards, showcasing attention to detail and hardware skills"],
   },
   {
-    role: "PCB Intern",
+    role: "Process Optimization Intern",
     company: "Pioneer Circuits",
     period: "Jul 2024 – Aug 2024",
     points: [
-      "Optimized PCB layout and assembly workflow, resulting in 31% improvement in efficiency",
-      "Documented assembly best practices for newcomers",
+      "Analyzed PCB manufacturing workflows and assembly processes end-to-end",
+      "Redesigned assembly process, improving operational efficiency by 31%",
+      "Documented standardized procedures for newcomers and shop-floor reference",
+      "Supported quality-control and manufacturing optimization initiatives",
     ],
   },
   {
