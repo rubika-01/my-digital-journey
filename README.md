@@ -4,7 +4,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Live-Portfolio-blue?style=for-the-badge)](YOUR_PORTFOLIO_URL)
 [![GitHub](https://img.shields.io/badge/GitHub-1Rubika-black?style=for-the-badge\&logo=github)](https://github.com/1Rubika)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rubika_N-blue?style=for-the-badge\&logo=linkedin)](YOUR_LINKEDIN_URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rubika_N-blue?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/rubika-nataraj-864990293/)
 [![Open to Work](https://img.shields.io/badge/Open%20to-Work-success?style=for-the-badge)](#contact)
 
 ---
