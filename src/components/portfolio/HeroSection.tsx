@@ -52,16 +52,14 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-2">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4">
             <span className="text-foreground">RUBIKA.N</span>
           </h1>
-          <h2 className="text-xl md:text-2xl font-bold mb-4">
-            <span className="text-gradient">AI / ML Engineer</span>
-          </h2>
 
           <p className="text-muted-foreground text-sm md:text-base max-w-lg leading-relaxed mb-8">
-            Software Engineering candidate with strong fundamentals in DSA, OOP, and AI/ML. 
-            Proficient in Python, Java, and C. Building intelligent solutions that make a difference.
+            Engineering student building <span className="text-primary font-semibold">scalable, cloud-native, and intelligent systems</span> across software, DevOps, and AI.
+            Strong fundamentals in DSA, OOP, system design, and cloud — fluent in Python, Java, and C.
+            Driven by reliability, accessibility, and real-world impact.
           </p>
 
           <div className="flex items-center gap-4 justify-center md:justify-start">
