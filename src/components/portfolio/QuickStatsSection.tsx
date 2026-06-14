@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Code, Users, Trophy, BadgeCheck } from "lucide-react";
+import { GraduationCap, Code, Users, Trophy, Award } from "lucide-react";
 
 const stats = [
   { icon: GraduationCap, value: "8.92", label: "CGPA" },
   { icon: Code, value: "600+", label: "Coding Problems Solved" },
   { icon: Users, value: "20+", label: "Technical Events Led" },
   { icon: Trophy, value: "20+", label: "Hackathon & Competition Wins" },
-  { icon: BadgeCheck, value: "50+", label: "Certifications & Badges" },
+  { icon: Award, value: "★", label: "Best Student Awardee" },
 ];
 
 const QuickStatsSection = () => (

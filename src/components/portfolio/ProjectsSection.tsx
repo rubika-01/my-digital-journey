@@ -1,8 +1,22 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
-import { Bot, Cloud, Heart, Eye, Hand, Brain, ArrowUpRight, CheckCircle } from "lucide-react";
+import { Bot, Cloud, Heart, Eye, Hand, Brain, ArrowUpRight, CheckCircle, Server, Accessibility } from "lucide-react";
 
 const projects = [
+  {
+    icon: Server,
+    name: "Cloud-Native AI Inference Optimization Platform",
+    desc: "Production-grade AI serving platform with autoscaling, batching, caching, and optimized routing. Improved deployment efficiency by 60% via Docker, Kubernetes, TensorRT, and CI/CD pipelines.",
+    tags: ["FastAPI", "Kubernetes", "AWS", "CI/CD", "TensorRT"],
+    completed: true,
+  },
+  {
+    icon: Accessibility,
+    name: "Universal Accessible Net Banking Platform",
+    desc: "AI-powered, WCAG 2.1 compliant banking platform with adaptive UI, multilingual voice assistance, high-contrast modes, and low-internet optimization for elderly and differently-abled users.",
+    tags: ["React", "FastAPI", "Firebase", "WCAG 2.1", "AI"],
+    completed: true,
+  },
   {
     icon: Heart,
     name: "TheraFun",
