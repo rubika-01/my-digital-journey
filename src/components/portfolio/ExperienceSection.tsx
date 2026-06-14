@@ -4,22 +4,24 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Student Developer",
+    role: "Student Developer & PCB Designer",
     company: "ARC Club, KPRIET",
     period: "Jan 2025 – Dec 2025",
     points: [
-      "Designed custom PCBs for InMoov humanoid robot using Altium, improving circuit efficiency by 95%",
-      "Built and simulated a Line Follower Robot using Design Thinking in Proteus",
-      "Built open-source circuits and mentored junior teams",
+      "Contributed to interdisciplinary projects — TheraFun, Drowsy Sentry, robotics, and embedded prototypes spanning AI, hardware, and simulation",
+      "Designed custom PCBs for InMoov humanoid robot using Altium, improving circuit efficiency by 95% via compact routing and reliable servo–sensor integration",
+      "Built and simulated a Line Follower Robot in Proteus, reducing debugging time by 30% through early-stage circuit validation",
+      "Strengthened hardware–software integration, cloud-connected systems, and collaborative engineering workflows",
     ],
   },
   {
     role: "DevOps & Cloud Automation Intern",
-    company: "RISE 4.0 by TamizhAnSkills",
+    company: "RISE 4.0 — Tamizhan Skills",
     period: "Mar 2026 – Present",
     points: [
-      "Gained hands-on experience in DevOps practices and cloud automation",
-      "Worked with CI/CD pipelines and infrastructure automation tools",
+      "Hands-on training in Linux, Git, CI/CD workflows, cloud automation, and deployment fundamentals",
+      "Practiced scripting, version control workflows, and cloud deployment patterns for scalable application delivery",
+      "Built understanding of cloud-native engineering practices through structured project tasks",
     ],
   },
   {
